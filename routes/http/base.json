@@ -1,0 +1,25 @@
+{
+  "/":{ "pointsTo": "redirect 301 > /0.0.7-alpha/index.htm", "cache":"no-cache" },
+  "/robots.txt":{ "pointsTo": "asset > static/robots.txt", "cache":"no-cache" },
+
+  "/favicon/{filename}":  { "pointsTo": "asset > static/favicon/{filename}", "cache":"no-cache" },
+  "/css/{filename}.css":  { "pointsTo": "asset > static/css/{filename}.css", "cache":"no-cache" },
+  "/js/{filename}.js":    { "pointsTo": "asset > static/js/{filename}.js", "cache":"no-cache" },
+
+  "/sitemap.xml":    { "pointsTo": "run > docs@sitemap", "cache":"no-cache" },
+
+  "/{version}":{
+    "/":{ "pointsTo": "redirect 302 > /{version}/index.htm" },
+
+    "/{filename}.htm":                      { "pointsTo": "run > docs@index", "cache":"no-cache" },
+    "/{folder1}/{filename}.htm":            { "pointsTo": "run > docs@index", "cache":"no-cache" },
+    "/{folder1}/{folder2}/{filename}.htm":  { "pointsTo": "run > docs@index", "cache":"no-cache" },
+
+    "/{filename}.md":                     { "pointsTo": "redirect 302 > /{version}/{filename}.htm", "cache":"no-cache" },
+    "/{folder1}/{filename}.md":           { "pointsTo": "redirect 302 > /{version}/{folder1}/{filename}.htm", "cache":"no-cache" },
+    "/{folder1}/{folder2}/{filename}.md": { "pointsTo": "redirect 302 > /{version}/{folder1}/{folder2}/{filename}.htm", "cache":"no-cache" },
+
+    "/{folder1}":           { "pointsTo": "redirect 302 > /{version}/{folder1}/index.htm", "cache":"no-cache" },
+    "/{folder1}/{folder2}": { "pointsTo": "redirect 302 > /{version}/{folder1}/{folder2}/index.htm", "cache":"no-cache" }
+  }
+}

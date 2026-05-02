@@ -1,0 +1,50 @@
+.toc-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-list .toc-list {
+  padding-left: 1rem;
+}
+
+.toc-list .toc-list-item{
+  position: relative!important;
+}
+
+.toc-link {
+  display: block;
+  padding: 0.35rem 0;
+  text-decoration: none;
+  opacity: 0.5;
+  /*font-family: var(--bs-headings-font-family);*/
+  font-weight: 400!important;
+  margin-left: 15px!important;
+}
+
+.toc-link:before{
+  width: 3px!important;
+  background: grey!important;
+  
+  /*margin-left:-10px!important;*/
+  margin-top:-1px!important;
+  height: calc(100% - 2px);
+}
+
+.toc-link:hover,
+.toc-link.is-active-link {
+  opacity: 1;
+}
+
+.toc-link.is-active-link:before{
+  background: var(--bs-primary)!important;
+}
+
+
+
+h1::before, h2::before, h3::before {
+  display: block;
+  content: " ";
+  height: 150px; /* Height of your header */
+  margin-top: -150px;
+  visibility: hidden;
+}
