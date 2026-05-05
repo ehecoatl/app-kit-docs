@@ -31,18 +31,18 @@ This kit is intentionally focused on documentation delivery. It is not a generic
 
 This kit uses a small set of external frontend dependencies loaded from CDNJS / Cloudflare CDN. These dependencies are used by the default documentation layout.
 
-| Dependency | Version | Source | Purpose |
-|---|---:|---|---|
-| Bootstrap | 5.3.8 | `https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css` | Base responsive layout, components, utilities, and theme behavior |
-| Bootstrap Bundle | 5.3.8 | `https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js` | Bootstrap JavaScript components, including collapse behavior |
-| Bootstrap Icons | 1.13.1 | `https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css` | UI icons used by navigation, theme toggle, and external links |
-| Tocbot CSS | 4.32.2 | `https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.32.2/tocbot.min.css` | Table-of-contents styling |
-| Tocbot JS | 4.32.2 | `https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.32.2/tocbot.min.js` | Table-of-contents generation from page headings |
-| Highlight.js Theme | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css` | Code block highlighting theme |
-| Highlight.js Core | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js` | Core syntax highlighting runtime |
-| Highlight.js JSON Language | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/json.min.js` | JSON syntax highlighting |
-| Highlight.js Bash Language | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/bash.min.js` | Bash syntax highlighting |
-| Highlight.js JavaScript Language | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js` | JavaScript syntax highlighting |
+| Dependency | Version | Purpose |
+|---|---:|---|
+| Bootstrap | 5.3.8 | Base responsive layout, components, utilities, and theme behavior |
+| Bootstrap Bundle | 5.3.8 | Bootstrap JavaScript components, including collapse behavior |
+| Bootstrap Icons | 1.13.1 |  UI icons used by navigation, theme toggle, and external links |
+| Tocbot CSS | 4.32.2 | Table-of-contents styling |
+| Tocbot JS | 4.32.2 | Table-of-contents generation from page headings |
+| Highlight.js Theme | 11.11.1 | Code block highlighting theme |
+| Highlight.js Core | 11.11.1 | Core syntax highlighting runtime |
+| Highlight.js JSON Language | 11.11.1 |  JSON syntax highlighting |
+| Highlight.js Bash Language | 11.11.1 |  Bash syntax highlighting |
+| Highlight.js JavaScript Language | 11.11.1 | JavaScript syntax highlighting |
 
 The layout also loads the Sora font from Google Fonts:
 
