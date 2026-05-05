@@ -27,6 +27,48 @@ It provides:
 
 This kit is intentionally focused on documentation delivery. It is not a generic application starter and does not include business logic, database models, auth flows, or product-specific services.
 
+## External CDN Dependencies
+
+This kit uses a small set of external frontend dependencies loaded from CDNJS / Cloudflare CDN. These dependencies are used by the default documentation layout.
+
+| Dependency | Version | Source | Purpose |
+|---|---:|---|---|
+| Bootstrap | 5.3.8 | `https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css` | Base responsive layout, components, utilities, and theme behavior |
+| Bootstrap Bundle | 5.3.8 | `https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js` | Bootstrap JavaScript components, including collapse behavior |
+| Bootstrap Icons | 1.13.1 | `https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css` | UI icons used by navigation, theme toggle, and external links |
+| Tocbot CSS | 4.32.2 | `https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.32.2/tocbot.min.css` | Table-of-contents styling |
+| Tocbot JS | 4.32.2 | `https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.32.2/tocbot.min.js` | Table-of-contents generation from page headings |
+| Highlight.js Theme | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark.min.css` | Code block highlighting theme |
+| Highlight.js Core | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js` | Core syntax highlighting runtime |
+| Highlight.js JSON Language | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/json.min.js` | JSON syntax highlighting |
+| Highlight.js Bash Language | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/bash.min.js` | Bash syntax highlighting |
+| Highlight.js JavaScript Language | 11.11.1 | `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js` | JavaScript syntax highlighting |
+
+The layout also loads the Sora font from Google Fonts:
+
+- `https://fonts.googleapis.com`
+- `https://fonts.gstatic.com`
+- `https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap`
+
+Local project assets are still served from this app kit through:
+
+- `/css/{filename}.css`
+- `/js/{filename}.js`
+
+If you need fully self-hosted documentation pages, replace the CDN references in `assets/templates/docs-layout.e.htm` with local files under `assets/static/css/` and `assets/static/js/`.
+
+## Frontend Assets and Dependencies
+
+This kit includes static frontend assets used by the documentation layout.
+
+Included assets:
+
+- Bootstrap-related layout/theme helpers
+- Tocbot CSS and initialization for generated table-of-contents behavior
+- Custom documentation styles
+- Custom AJAX navigation helpers
+- Custom code highlighting helpers
+
 ## Repository Structure
 
 ```text
